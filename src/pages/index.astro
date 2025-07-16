@@ -1,9 +1,12 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import { Section, Container, Block, Link } from '../../devlink/_Builtin/Basic';
+import { Navbar } from '../../devlink';
+import { Footer } from '../../devlink';
 ---
 
 <Layout>
+  <Navbar />
   <Section
     client:load
     tag="section"
@@ -41,6 +44,7 @@ import { Section, Container, Block, Link } from '../../devlink/_Builtin/Basic';
       </Block>
     </Container>
   </Section>
+  <Footer />
 </Layout>
 
 <style>
